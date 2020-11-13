@@ -21,7 +21,8 @@ public class Slimeai : MonoBehaviour
         float[] distance;
             
         player = GameObject.FindGameObjectsWithTag("Player");
-        ai.target = GetClosestPlayer(player).transform;
+        if(player != null)
+            ai.target = GetClosestPlayer(player).transform;
         
         healthbar.maxValue = maxhp;
         healthbar.value = hp;

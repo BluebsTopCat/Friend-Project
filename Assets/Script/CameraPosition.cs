@@ -16,8 +16,14 @@ public class CameraPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 playerpos;
         player = GameObject.FindGameObjectWithTag("Player");
-        Vector3 playerpos = player.transform.position;
+        
+        if (player != null)
+            playerpos = player.transform.position;
+        else 
+            playerpos = this.transform.position;
+        
         Vector3 camPos = new Vector3(Mathf.Round(playerpos.x/width)*width,Mathf.Round(playerpos.y/height)*height, this.transform.position.z);
         transform.position = Vector3.SmoothDamp(transform.position, camPos, ref velocity, smoothTime);
     }

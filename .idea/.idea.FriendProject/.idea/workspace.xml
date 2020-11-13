@@ -2,8 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ca5213a-b158-45af-a7f4-24ba060a56a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/One.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/One/D.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/One/D.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/One/L.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/One/L.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/One/R.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/One/R.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/One/U.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/One/U.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/DLR 1 1 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/DLR 1 1 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/DLR.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/DLR.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/UDL.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/UDL.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/UDR.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/UDR.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/ULR.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Three/ULR.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/DL.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/DL.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/DR.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/DR.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/LR.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/LR.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/UD.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/UD.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/UL.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/UL.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/UR.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/Two/UR.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/UDLR.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Blocks/UDLR.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Slime.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Slime.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DungeonGen2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DungeonGen2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CameraPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CameraPosition.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Slimeai.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Slimeai.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +55,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/Slimeai.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/CameraPosition.cs" />
       </list>
     </option>
   </component>
@@ -68,6 +106,7 @@
       <updated>1605220465017</updated>
       <workItem from="1605220483232" duration="474000" />
       <workItem from="1605223699607" duration="2575000" />
+      <workItem from="1605299987974" duration="268000" />
     </task>
     <servers />
   </component>
