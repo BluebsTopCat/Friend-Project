@@ -1,27 +1,28 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Pathfinding;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Slimeai : MonoBehaviour
 {
-    private GameObject player;
-
+    private GameObject[] player;
     public float speed;
     public int hp = 10;
     public int maxhp = 10;
     public Slider healthbar;
-    private void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
 
+    public AIDestinationSetter ai;
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = player.transform.position - this.transform.position;
-        this.GetComponent<Rigidbody2D>().velocity = direction.normalized * speed;     
+        float[] distance;
+            
+        player = GameObject.FindGameObjectsWithTag("Player");
+        ai.target = GetClosestPlayer(player).transform;
+        
         healthbar.maxValue = maxhp;
         healthbar.value = hp;
         
@@ -33,5 +34,23 @@ public class Slimeai : MonoBehaviour
     {
         Debug.Log("RegisteredHit!");
         this.hp -= damg;
+    }
+
+    GameObject GetClosestPlayer(GameObject[] enemies)
+    {
+        GameObject tMin = null;
+        float minDist = Mathf.Infinity;
+        Vector3 currentPos = transform.position;
+        foreach (GameObject t in enemies)
+        {
+            float dist = Vector3.Distance(t.transform.position, currentPos);
+            if (dist < minDist)
+            {
+                tMin = t;
+                minDist = dist;
+            }
+        }
+
+        return tMin;
     }
 }
