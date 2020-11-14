@@ -1661,7 +1661,7 @@ GameObject:
   - component: {fileID: 410751410}
   - component: {fileID: 410751412}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Pathfinding grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6200,7 +6200,7 @@ GameObject:
   - component: {fileID: 1817250971}
   - component: {fileID: 1817250972}
   m_Layer: 0
-  m_Name: Minimap
+  m_Name: Maker
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6250,6 +6250,7 @@ MonoBehaviour:
   - {fileID: 1441624794919603371, guid: d62c2d9ad1894d04d9ffd5678f4b39e0, type: 3}
   LR:
   - {fileID: 2054125135171643072, guid: 01fd7edb102c7784ea0002691fe32f5a, type: 3}
+  - {fileID: 1257849554751833994, guid: 19c276a91e1aecc4fa37b85b9298237d, type: 3}
   UL:
   - {fileID: 935860244989673639, guid: ad089d8c0c4e92a4a9fa9540d8c0b0cb, type: 3}
   UR:
