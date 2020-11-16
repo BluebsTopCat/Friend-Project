@@ -41,7 +41,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         Player = this.GetComponent<Rigidbody2D>();
-        this.transform.parent = GameObject.FindGameObjectWithTag("Grid").transform;
     }
     
 
