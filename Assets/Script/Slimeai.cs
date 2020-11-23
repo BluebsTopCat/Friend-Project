@@ -18,8 +18,6 @@ public class Slimeai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float[] distance;
-            
         player = GameObject.FindGameObjectsWithTag("Player");
         if(player != null)
             ai.target = GetClosestPlayer(player).transform;

@@ -3,19 +3,41 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2ca5213a-b158-45af-a7f4-24ba060a56a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Three/DLR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Three/DLR.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/LR2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Two/LR2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Scripts/LevelGeneration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dungeontest/Scripts/LevelGeneration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experimental Tileset 2/TileMap 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experimental Tileset 2/TileMap 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/LR3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/LR3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PathFindingTrigger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PathFindingTrigger.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DungeonGen2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DungeonGen2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ew tileset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ew tileset.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Slimeai.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Slimeai.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Squish.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Squish.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Swime.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Swime.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +47,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFC774E3-9F15-4E8B-ACC0-AAE5397B53AE/04/aa59889e/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Slimeai.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/CameraPosition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Dungeontest/Scripts/LevelGeneration.cs" />
+        <option value="$PROJECT_DIR$/Assets/ItemLib.cs" />
+        <option value="$PROJECT_DIR$/Assets/MyScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Slimeai.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerMaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DebuffsCached.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -85,6 +115,10 @@
       <workItem from="1605299987974" duration="268000" />
       <workItem from="1605317781910" duration="1025000" />
       <workItem from="1605492851444" duration="3409000" />
+      <workItem from="1605508791800" duration="1575000" />
+      <workItem from="1605808389030" duration="2900000" />
+      <workItem from="1605849017662" duration="5483000" />
+      <workItem from="1605924086543" duration="304000" />
     </task>
     <servers />
   </component>
@@ -93,6 +127,18 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -101,5 +147,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="365" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040@0.0.1920.1040" timestamp="1605493383593" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605810533319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605810533319" />
   </component>
 </project>
