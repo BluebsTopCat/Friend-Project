@@ -4919,6 +4919,8 @@ MonoBehaviour:
   maxhp: 10
   healthbar: {fileID: 8510191677024152508}
   ai: {fileID: 8510191676330300709}
+  path: {fileID: 8510191676330300730}
+  thisenemy: {fileID: 8510191676330300732}
 --- !u!58 &8510191676330300729
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5025,7 +5027,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.1
+  m_Mass: 0.7853982
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0

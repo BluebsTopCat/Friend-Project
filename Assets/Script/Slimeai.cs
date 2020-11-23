@@ -15,9 +15,19 @@ public class Slimeai : MonoBehaviour
     public Slider healthbar;
 
     public AIDestinationSetter ai;
+
+    public AIPath path;
+
+    public Renderer thisenemy;
     // Update is called once per frame
     void Update()
     {
+        
+        if (thisenemy.isVisible)
+            path.canMove = true;
+        else
+            path.canMove = false;
+        
         player = GameObject.FindGameObjectsWithTag("Player");
         if(player != null)
             ai.target = GetClosestPlayer(player).transform;
