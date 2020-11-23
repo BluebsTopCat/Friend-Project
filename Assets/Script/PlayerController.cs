@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public Class playerclass;
     public int playerclassint;
     public string[] _options   = {"Ranged", "Mage", "Healer", "Tank"};
-    
+    public PlayerUImaster uicanvas;
     public int maxhp;
     public int currenthp;
 
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        uicanvas.Update(currenthp ,maxhp, playerclass, mana ,maxmana,currentbullets);
         _player.velocity = movement;
         var position = this.transform.position;
         virtualcursor.transform.position = new Vector3(position.x + _inputs.x* 7f, position.y + _inputs.y* 7f, 0f);
@@ -137,6 +137,9 @@ public class PlayerController : MonoBehaviour
     }
     void Shoot()
     {
+        if(currentbullets == 0)
+            return;
+        
         int bullets = _gunarray[gun].bullets;
         for (int i = 0; i < bullets; i++)
         {
@@ -154,10 +157,15 @@ public class PlayerController : MonoBehaviour
                 _target = virtualcursor.transform.position;
             }
 
-            bulletscript.destination = new Vector3(_target.x + Random.Range(-_gunarray[gun].spread,_gunarray[gun].spread) , _target.y + Random.Range(-_gunarray[gun].spread,_gunarray[gun].spread), 0);
+            bulletscript.speed = _gunarray[gun].speed;
+            if(_right)
+                 bulletscript.destination = this.transform.position + shootpoint.transform.right * 100;
+            else
+                bulletscript.destination = this.transform.position - shootpoint.transform.right * 100;
             bulletscript.damage = _gunarray[gun].damage;
         }
 
+        currentbullets--;
     }
     void OnLookDir(InputValue input)
     {
@@ -191,6 +199,7 @@ public class PlayerController : MonoBehaviour
     {
         
         var myScript = target as PlayerController;
+        myScript.uicanvas = (PlayerUImaster) EditorGUILayout.ObjectField("UI", myScript.uicanvas, typeof(PlayerUImaster), true);
         myScript.speed = EditorGUILayout.FloatField("Speed", myScript.speed);
         myScript.playerclassint = EditorGUILayout.Popup("Class", myScript.playerclassint, myScript._options);
         EditorGUILayout.Space();

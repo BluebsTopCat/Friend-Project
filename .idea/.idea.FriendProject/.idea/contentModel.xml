@@ -969,6 +969,7 @@
         <e p="InputStuff" t="Include">
           <e p="PlayerInputs.cs" t="Include" />
         </e>
+        <e p="PlayerUImaster.cs" t="Include" />
         <e p="Script" t="Include">
           <e p="AnimatedTile.cs" t="Include" />
           <e p="blastscript.cs" t="Include" />

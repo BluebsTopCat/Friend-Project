@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: 295477308073668634
     second: _mmo1_5
+  - first:
+      213: 4248651284593647773
+    second: _mmo1_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +67,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 7
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 14
+        y: 21
         width: 13
         height: 7
       alignment: 0
@@ -131,7 +134,7 @@ TextureImporter:
       name: _mmo1_1
       rect:
         serializedVersion: 2
-        x: 13
+        x: 0
         y: 14
         width: 13
         height: 7
@@ -152,8 +155,8 @@ TextureImporter:
       name: _mmo1_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 7
+        x: 13
+        y: 14
         width: 13
         height: 7
       alignment: 0
@@ -173,7 +176,7 @@ TextureImporter:
       name: _mmo1_3
       rect:
         serializedVersion: 2
-        x: 13
+        x: 0
         y: 7
         width: 13
         height: 7
@@ -194,8 +197,8 @@ TextureImporter:
       name: _mmo1_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 13
+        y: 7
         width: 13
         height: 7
       alignment: 0
@@ -215,7 +218,7 @@ TextureImporter:
       name: _mmo1_5
       rect:
         serializedVersion: 2
-        x: 13
+        x: 0
         y: 0
         width: 13
         height: 7
@@ -228,6 +231,27 @@ TextureImporter:
       bones: []
       spriteID: a107be2db0fb91400800000000000000
       internalID: 295477308073668634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _mmo1_6
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9026b045dd36fa30800000000000000
+      internalID: 4248651284593647773
       vertices: []
       indices: 
       edges: []
