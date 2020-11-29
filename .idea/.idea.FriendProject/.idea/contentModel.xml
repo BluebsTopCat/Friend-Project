@@ -954,6 +954,7 @@
             <e p="UnityReferenceHelper.cs" t="Include" />
           </e>
         </e>
+        <e p="DungeonGenerationTest2.cs" t="Include" />
         <e p="Dungeontest" t="Include">
           <e p="Scripts" t="Include">
             <e p="ColorToGameObject.cs" t="Include" />

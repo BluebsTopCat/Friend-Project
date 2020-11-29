@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        uicanvas.Update(currenthp ,maxhp, playerclass, mana ,maxmana,currentbullets);
+        uicanvas.Updateplayer(currenthp ,maxhp, playerclass, mana ,maxmana,currentbullets);
         _player.velocity = movement;
         var position = this.transform.position;
         virtualcursor.transform.position = new Vector3(position.x + _inputs.x* 7f, position.y + _inputs.y* 7f, 0f);

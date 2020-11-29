@@ -23,10 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ca5213a-b158-45af-a7f4-24ba060a56a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Slime.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Slime.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DungeonGen2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DungeonGen2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Slimeai.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Slimeai.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerUImaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerUImaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +51,10 @@
         <option value="$PROJECT_DIR$/Assets/Script/PlayerMaster.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DebuffsCached.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerUI master.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/PlayerUImaster.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Slimeai.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerUImaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/DungeonGenerationTest2.cs" />
       </list>
     </option>
   </component>
@@ -112,6 +114,11 @@
       <workItem from="1605924086543" duration="304000" />
       <workItem from="1606103387316" duration="4132000" />
       <workItem from="1606162377725" duration="428000" />
+      <workItem from="1606259584860" duration="2941000" />
+      <workItem from="1606359456648" duration="3459000" />
+      <workItem from="1606380091274" duration="4080000" />
+      <workItem from="1606427842980" duration="4113000" />
+      <workItem from="1606530119507" duration="10259000" />
     </task>
     <servers />
   </component>
@@ -136,13 +143,29 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="707" y="365" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1605493383593">
+    <state x="707" y="365" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1606541632825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="707" y="365" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040@0.0.1920.1040" timestamp="1605493383593" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605810533319">
+    <state x="707" y="365" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040@0.0.1920.1040" timestamp="1606541632825" />
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1606382123179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605810533319" />
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606382123179" />
+    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1606382123179">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606382123179" />
+    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1606382123179">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606382123179" />
+    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1606382123179">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606382123179" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606540579642">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606540579642" />
   </component>
 </project>

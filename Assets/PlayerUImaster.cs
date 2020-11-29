@@ -12,7 +12,7 @@ public class PlayerUImaster : MonoBehaviour
 
     public Sprite[] ammoimages;
 
-    public void Update(int _hp, int maxhp, Class playerclass, int _mana, int maxmana, int _ammo)
+    public void Updateplayer(int _hp, int maxhp, Class playerclass, int _mana, int maxmana, int _ammo)
     {
         hp.maxValue = maxhp;
         hp.value = _hp;
