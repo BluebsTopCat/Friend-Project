@@ -11,6 +11,8 @@ TagManager:
   - Combatant
   - Turnmaster
   - PlayerProjectile
+  - Interactable
+  - Coins
   layers:
   - Default
   - TransparentFX

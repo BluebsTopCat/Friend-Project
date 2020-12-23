@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: GrassWaterTileset1 1_87
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1787993110537159399, guid: a61dd462e9a5d4f4cb2174ea591dcde8, type: 3}
+  m_Sprite: {fileID: -8445964328937166122, guid: 367539d651560c14b9d19b4be3aaa52c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -33,4 +33,4 @@ MonoBehaviour:
     e33: 1
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
-  m_ColliderType: 1
+  m_ColliderType: 2

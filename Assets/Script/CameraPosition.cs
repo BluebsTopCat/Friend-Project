@@ -24,7 +24,7 @@ public class CameraPosition : MonoBehaviour
         else 
             playerpos = this.transform.position;
         
-        Vector3 camPos = new Vector3(Mathf.Round(playerpos.x/width)*width,Mathf.Round(playerpos.y/height)*height, this.transform.position.z);
+        Vector3 camPos = new Vector3(Mathf.Round(playerpos.x/width)*width,Mathf.Round(playerpos.y/height)*height + .5f, this.transform.position.z);
         transform.position = Vector3.SmoothDamp(transform.position, camPos, ref velocity, smoothTime);
     }
 }

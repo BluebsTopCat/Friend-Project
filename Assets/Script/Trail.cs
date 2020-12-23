@@ -18,7 +18,7 @@ public class Trail : MonoBehaviour
         this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
         this.transform.Translate(new Vector3(speed*Time.deltaTime, 0f, 0f));
         
-     if (Vector3.Distance(destination, this.transform.position) < .1)
+     if (Vector3.Distance(destination, this.transform.position) < 10)
      {
          GameObject shot = Instantiate(blast);
          shot.transform.position = this.transform.position;
@@ -29,6 +29,8 @@ public class Trail : MonoBehaviour
     {
         if(other.gameObject.GetComponent<Slimeai>())
         {
+            GameObject shot = Instantiate(blast);
+            shot.transform.position = this.transform.position;
             other.gameObject.GetComponent<Slimeai>().hurt(damage);
             Destroy(this.gameObject);
         }

@@ -4914,12 +4914,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db14b670124dc6642869532a49bb716f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chanceofmoneydrop: 3
+  minmoney: 1
+  maxmoney: 4
   speed: 0
   hp: 10
   maxhp: 10
   healthbar: {fileID: 8510191677024152508}
+  dropcash: {fileID: 4840559611854015492, guid: b5e451aeabea8e8458579b2cbd00749d, type: 3}
   ai: {fileID: 8510191676330300709}
   path: {fileID: 8510191676330300730}
+  useai: 1
   thisenemy: {fileID: 8510191676330300732}
 --- !u!58 &8510191676330300729
 CircleCollider2D:
@@ -4936,7 +4941,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.45
 --- !u!114 &8510191676330300731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4978,7 +4983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 2
-  radius: 0.75
+  radius: 0.5
   height: 1
   repathRate: 0.5
   canSearch: 1
@@ -5027,7 +5032,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.7853982
+  m_Mass: 0.6361725
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0

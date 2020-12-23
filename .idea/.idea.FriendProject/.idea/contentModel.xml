@@ -954,7 +954,6 @@
             <e p="UnityReferenceHelper.cs" t="Include" />
           </e>
         </e>
-        <e p="DungeonGenerationTest2.cs" t="Include" />
         <e p="Dungeontest" t="Include">
           <e p="Scripts" t="Include">
             <e p="ColorToGameObject.cs" t="Include" />
@@ -970,9 +969,11 @@
         <e p="InputStuff" t="Include">
           <e p="PlayerInputs.cs" t="Include" />
         </e>
-        <e p="PlayerUImaster.cs" t="Include" />
+        <e p="MoneyStack.cs" t="Include" />
+        <e p="RoomIniter.cs" t="Include" />
         <e p="Script" t="Include">
           <e p="AnimatedTile.cs" t="Include" />
+          <e p="BigFloppa.cs" t="Include" />
           <e p="blastscript.cs" t="Include" />
           <e p="Block.cs" t="Include" />
           <e p="Button.cs" t="Include" />
@@ -980,6 +981,7 @@
           <e p="CameraPosition.cs" t="Include" />
           <e p="DamageScript.cs" t="Include" />
           <e p="DebuffsCached.cs" t="Include" />
+          <e p="DungeonGenerationTest2.cs" t="Include" />
           <e p="FlavourTextforBattle.cs" t="Include" />
           <e p="Interaction.cs" t="Include" />
           <e p="Libs" t="Include">
@@ -992,10 +994,13 @@
           <e p="PathFindingTrigger.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerMaster.cs" t="Include" />
+          <e p="PlayerUImaster.cs" t="Include" />
           <e p="Slimeai.cs" t="Include" />
           <e p="Trail.cs" t="Include" />
           <e p="Turns.cs" t="Include" />
         </e>
+        <e p="spearthrower.cs" t="Include" />
+        <e p="summonspears.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">

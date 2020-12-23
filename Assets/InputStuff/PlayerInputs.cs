@@ -27,7 +27,7 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Interact"",
+                    ""name"": ""Melee"",
                     ""type"": ""Button"",
                     ""id"": ""59396298-59ba-4a0e-a374-f1158657efc1"",
                     ""expectedControlType"": ""Button"",
@@ -47,6 +47,22 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                     ""type"": ""Value"",
                     ""id"": ""d96ed45d-646b-4115-8f6e-b5c1c16cb89d"",
                     ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Reload"",
+                    ""type"": ""Button"",
+                    ""id"": ""143ee680-72eb-47a3-bb0c-31b1c7f39560"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""1c9480a1-7be6-4a7d-9a4f-6e4328d68fb4"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -136,7 +152,7 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard and mouse"",
-                    ""action"": ""Interact"",
+                    ""action"": ""Melee"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -147,7 +163,7 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Controller"",
-                    ""action"": ""Interact"",
+                    ""action"": ""Melee"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -158,7 +174,7 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Controller"",
-                    ""action"": ""Interact"",
+                    ""action"": ""Melee"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -216,6 +232,50 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                     ""action"": ""LookDir"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5b9ded70-0921-4a4d-967d-63459600cba0"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
+                    ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""912a682b-458c-487b-bd60-6d77cf179cf5"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and mouse"",
+                    ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0e7a15b0-a428-40a4-92b4-b3e604fa3baa"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and mouse"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e09d9728-b75c-400e-bc06-55ea8300475e"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -263,9 +323,11 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
         // Overworld
         m_Overworld = asset.FindActionMap("Overworld", throwIfNotFound: true);
         m_Overworld_Movement = m_Overworld.FindAction("Movement", throwIfNotFound: true);
-        m_Overworld_Interact = m_Overworld.FindAction("Interact", throwIfNotFound: true);
+        m_Overworld_Melee = m_Overworld.FindAction("Melee", throwIfNotFound: true);
         m_Overworld_Special = m_Overworld.FindAction("Special", throwIfNotFound: true);
         m_Overworld_LookDir = m_Overworld.FindAction("LookDir", throwIfNotFound: true);
+        m_Overworld_Reload = m_Overworld.FindAction("Reload", throwIfNotFound: true);
+        m_Overworld_Interact = m_Overworld.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -316,17 +378,21 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Overworld;
     private IOverworldActions m_OverworldActionsCallbackInterface;
     private readonly InputAction m_Overworld_Movement;
-    private readonly InputAction m_Overworld_Interact;
+    private readonly InputAction m_Overworld_Melee;
     private readonly InputAction m_Overworld_Special;
     private readonly InputAction m_Overworld_LookDir;
+    private readonly InputAction m_Overworld_Reload;
+    private readonly InputAction m_Overworld_Interact;
     public struct OverworldActions
     {
         private @PlayerInputs m_Wrapper;
         public OverworldActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Overworld_Movement;
-        public InputAction @Interact => m_Wrapper.m_Overworld_Interact;
+        public InputAction @Melee => m_Wrapper.m_Overworld_Melee;
         public InputAction @Special => m_Wrapper.m_Overworld_Special;
         public InputAction @LookDir => m_Wrapper.m_Overworld_LookDir;
+        public InputAction @Reload => m_Wrapper.m_Overworld_Reload;
+        public InputAction @Interact => m_Wrapper.m_Overworld_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Overworld; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -339,15 +405,21 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                 @Movement.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnMovement;
-                @Interact.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
-                @Interact.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
-                @Interact.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
+                @Melee.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnMelee;
+                @Melee.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnMelee;
+                @Melee.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnMelee;
                 @Special.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnSpecial;
                 @Special.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnSpecial;
                 @Special.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnSpecial;
                 @LookDir.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnLookDir;
                 @LookDir.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnLookDir;
                 @LookDir.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnLookDir;
+                @Reload.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnReload;
+                @Reload.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnReload;
+                @Reload.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnReload;
+                @Interact.started -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_OverworldActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_OverworldActionsCallbackInterface = instance;
             if (instance != null)
@@ -355,15 +427,21 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
-                @Interact.started += instance.OnInteract;
-                @Interact.performed += instance.OnInteract;
-                @Interact.canceled += instance.OnInteract;
+                @Melee.started += instance.OnMelee;
+                @Melee.performed += instance.OnMelee;
+                @Melee.canceled += instance.OnMelee;
                 @Special.started += instance.OnSpecial;
                 @Special.performed += instance.OnSpecial;
                 @Special.canceled += instance.OnSpecial;
                 @LookDir.started += instance.OnLookDir;
                 @LookDir.performed += instance.OnLookDir;
                 @LookDir.canceled += instance.OnLookDir;
+                @Reload.started += instance.OnReload;
+                @Reload.performed += instance.OnReload;
+                @Reload.canceled += instance.OnReload;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -389,8 +467,10 @@ public class @PlayerInputs : IInputActionCollection, IDisposable
     public interface IOverworldActions
     {
         void OnMovement(InputAction.CallbackContext context);
-        void OnInteract(InputAction.CallbackContext context);
+        void OnMelee(InputAction.CallbackContext context);
         void OnSpecial(InputAction.CallbackContext context);
         void OnLookDir(InputAction.CallbackContext context);
+        void OnReload(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }

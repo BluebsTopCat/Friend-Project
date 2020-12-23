@@ -37,10 +37,11 @@ public class DungeonGenerationTest2 : MonoBehaviour
     public int numberofrooms;
     public int seed;
     public GameObject bridge;
+    public GameObject bigisland;
     public List<Vector2> Largetiles = new List<Vector2>();
     public List<Connection> connections = new List<Connection>();
     public List<DungeonTile> tiles = new List<DungeonTile>();
-
+    public GameObject parent;
     private static object locker = new object();
 
     // Start is called before the first frame update
@@ -70,6 +71,7 @@ public class DungeonGenerationTest2 : MonoBehaviour
     private void drawgrid()
     {
         var start = Instantiate(room, new Vector3(0, 0, 0), transform.rotation);
+        start.transform.parent = parent.transform;
         tiles.Add(new DungeonTile(start, new Vector2(0, 0)));
 
         for (var i = 0; i < numberofrooms;)
@@ -98,6 +100,7 @@ public class DungeonGenerationTest2 : MonoBehaviour
                 Mathf.Abs(newpos.y) < width / 2 + 1)
             {
                 var tile = Instantiate(room, new Vector3(newpos.x, newpos.y, 0), transform.rotation);
+                tile.transform.parent = parent.transform;
                 tiles.Add(new DungeonTile(tile, newpos));
                 tile.name = "Block " + newpos;
                 var newb = Instantiate(bridge, new Vector3((newpos.x + basepos.x) / 2, (newpos.y + basepos.y) / 2, 0),
@@ -107,6 +110,7 @@ public class DungeonGenerationTest2 : MonoBehaviour
                 else
                     newb.transform.eulerAngles = new Vector3(0f, 0f, 90f);
                 i++;
+                newb.transform.parent = parent.transform;
                 connections.Add(new Connection(new Vector4(basepos.x, basepos.y, newpos.x, newpos.y), newb));
                 newb.name = "Bridge: " + new Vector4(basepos.x, basepos.y, newpos.x, newpos.y);
             }
@@ -148,6 +152,7 @@ public class DungeonGenerationTest2 : MonoBehaviour
                     newb.transform.eulerAngles = new Vector3(0f, 0f, 90f);
                 connections.Add(new Connection(new Vector4(bridgepos.x, bridgepos.y, newbridgepos.x, newbridgepos.y),
                     newb));
+                newb.transform.parent = parent.transform;
                 newb.name = "After the fact Bridge: " + new Vector4(bridgepos.x, bridgepos.y, newbridgepos.x, newbridgepos.y).ToString();
                 b++;
             }
@@ -182,12 +187,10 @@ public class DungeonGenerationTest2 : MonoBehaviour
             {
                 Debug.Log("Found box at " + dg.pos + " - " + new Vector2(dg.pos.x - 1, dg.pos.y - 1));
 
-                var largetile = Instantiate(room, new Vector3(dg.pos.x - 0.5f, dg.pos.y - 0.5f, 0f),
+                var largetile = Instantiate(bigisland, new Vector3(dg.pos.x - 0.5f, dg.pos.y - 0.5f, 0f),
                     transform.rotation);
                 largetile.name = "Large Tile: " + dg.pos + " - " + new Vector2(dg.pos.x - 1, dg.pos.y - 1);
-                largetile.transform.localScale = new Vector3(2, 2, 2);
-                largetile.GetComponent<SpriteRenderer>().sortingOrder = 1;
-
+                largetile.transform.parent = parent.transform;
                 Largetiles.Add(dg.pos);
                 Largetiles.Add(new Vector2(dg.pos.x - 1, dg.pos.y));
                 Largetiles.Add(new Vector2(dg.pos.x - 1, dg.pos.y - 1));
@@ -201,6 +204,10 @@ public class DungeonGenerationTest2 : MonoBehaviour
                 connections.Remove(left);
                 Destroy(right.bridge);
                 connections.Remove(right);
+                Destroy(tiles.Find(tile => tile.pos == dg.pos).obj);
+                Destroy(tiles.Find(tile => tile.pos == new Vector2(dg.pos.x - 1, dg.pos.y)).obj);
+                Destroy(tiles.Find(tile => tile.pos == new Vector2(dg.pos.x - 1, dg.pos.y - 1)).obj);
+                Destroy(tiles.Find(tile => tile.pos == new Vector2(dg.pos.x, dg.pos.y - 1)).obj);
             }
         }
     }

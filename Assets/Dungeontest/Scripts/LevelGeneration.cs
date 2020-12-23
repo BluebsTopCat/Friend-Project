@@ -190,7 +190,7 @@ public class LevelGeneration : MonoBehaviour
 
             var drawPos = room.gridPos;
             drawPos.x *= 16; //aspect ratio of map sprite
-            drawPos.y *= 8;
+            drawPos.y *= 9;
             //create map obj and assign its variables
             var doors = "";
 

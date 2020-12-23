@@ -24,10 +24,52 @@
   <component name="ChangeListManager">
     <list default="true" id="2ca5213a-b158-45af-a7f4-24ba060a56a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FriendProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerUImaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerUImaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AstarPathfindingProject/Core/AstarPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AstarPathfindingProject/Core/AstarPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/One/D/D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/One/D/D.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/One/L.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/One/L.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/One/R.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/One/R.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/One/U.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/One/U.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Three/DLR 1 1 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Three/DLR 1 1 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Three/DLR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Three/DLR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Three/UDL.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Three/UDL.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Three/UDR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Three/UDR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Three/ULR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Three/ULR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/DL.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Two/DL.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/DR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Two/DR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/HDmessing.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Two/HDmessing.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/LR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Two/LR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/UD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Two/UD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/UL.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Two/UL.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Two/UR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Two/UR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/UDLR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/UDLR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bridge.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bridge.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DungeonGenerationTest2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DungeonGenerationTest2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dungeontest/Scripts/LevelGeneration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dungeontest/Scripts/LevelGeneration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experiment.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experiment.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputStuff/PlayerInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputStuff/PlayerInputs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputStuff/PlayerInputs.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputStuff/PlayerInputs.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Island.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Island.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerUImaster.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerUImaster.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Slime.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Slime.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DungeonGen2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DungeonGen2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CameraPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CameraPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Libs/GunList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Libs/GunList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Slimeai.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Slimeai.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Trail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Trail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures n Materials/Experimental Tileset 2/TileMap 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures n Materials/Experimental Tileset 2/TileMap 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures n Materials/Tileset Textures/Forest/GrassWaterTileset1 1_84.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures n Materials/Tileset Textures/Forest/GrassWaterTileset1 1_84.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures n Materials/Tileset Textures/Forest/GrassWaterTileset1 1_85.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures n Materials/Tileset Textures/Forest/GrassWaterTileset1 1_85.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures n Materials/Tileset Textures/Forest/GrassWaterTileset1 1_86.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures n Materials/Tileset Textures/Forest/GrassWaterTileset1 1_86.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures n Materials/Tileset Textures/Forest/GrassWaterTileset1 1_87.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures n Materials/Tileset Textures/Forest/GrassWaterTileset1 1_87.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures n Materials/_hotty.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures n Materials/_hotty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures n Materials/_hotty.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures n Materials/_hotty.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +80,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MoneyStack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFC774E3-9F15-4E8B-ACC0-AAE5397B53AE/04/aa59889e/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/spearthrower.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/CameraPosition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Dungeontest/Scripts/LevelGeneration.cs" />
         <option value="$PROJECT_DIR$/Assets/ItemLib.cs" />
         <option value="$PROJECT_DIR$/Assets/MyScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerMaster.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DebuffsCached.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerUI master.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Slimeai.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerUImaster.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/DungeonGenerationTest2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerMaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/AstarPathfindingProject/Core/AstarPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Libs/ItemLib.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Trail.cs" />
+        <option value="$PROJECT_DIR$/Assets/BigFloppa.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Libs/GunList.cs" />
+        <option value="$PROJECT_DIR$/Assets/RoomIniter.cs" />
+        <option value="$PROJECT_DIR$/Assets/summonspears.cs" />
+        <option value="$PROJECT_DIR$/Assets/spearthrower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Dungeontest/Scripts/LevelGeneration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/CameraPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyStack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Slimeai.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DamageScript.cs" />
       </list>
     </option>
   </component>
@@ -119,6 +173,14 @@
       <workItem from="1606380091274" duration="4080000" />
       <workItem from="1606427842980" duration="4113000" />
       <workItem from="1606530119507" duration="10259000" />
+      <workItem from="1607904239895" duration="1901000" />
+      <workItem from="1607991787315" duration="991000" />
+      <workItem from="1608060673427" duration="182000" />
+      <workItem from="1608069650455" duration="3246000" />
+      <workItem from="1608099762155" duration="301000" />
+      <workItem from="1608410412251" duration="8884000" />
+      <workItem from="1608423774587" duration="10799000" />
+      <workItem from="1608497861923" duration="6879000" />
     </task>
     <servers />
   </component>
@@ -163,9 +225,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606382123179" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606540579642">
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1608412266354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606540579642" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608412266354" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1608431228113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608431228113" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608433152884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608433152884" />
   </component>
 </project>
